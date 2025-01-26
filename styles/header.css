@@ -1,0 +1,22 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lhs-header {
+  background-color: lightblue;
+  width: 200px;
+}
+
+.mid-header {
+  background-color: lightgreen;  
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+}
+
+.rhs-header {
+  background-color: lightpink;
+  width: 200px;
+}
