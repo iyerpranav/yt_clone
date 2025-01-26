@@ -1,22 +1,85 @@
-.header {
-  height: 55px;
+.header-flexbox {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(199, 199, 199);
+  border-bottom-style: solid;
 }
 
 .lhs-header {
-  background-color: lightblue;
-  width: 200px;
+  display: flex;
+  align-items: center;
 }
 
 .mid-header {
-  background-color: lightgreen;  
+  display: flex;
+  align-items: center; 
   flex: 1;
+  max-width: 700px;
   margin-left: 70px;
   margin-right: 35px;
 }
 
 .rhs-header {
-  background-color: lightpink;
-  width: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+}
+
+.ham-menu, .yt-logo {
+  height: 24px;
+  margin-left: 24px;
+}
+
+.s-btn {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  width: 66px;
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+  border-radius: 1px;
+  background-color: rgb(241, 241, 241);
+  margin-left: -1px;
+  margin-right: 8px;
+}
+.v-s-btn {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(241, 241, 241);
+  border-color: rgb(241, 241, 241);
+  border-style: solid;
+}
+
+.s-bar {
+  font-size: 16px;
+  height: 36px;
+  flex: 1;
+  border-color: rgb(199, 199, 199);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  padding-left: 10px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.s-bar::placeholder {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }

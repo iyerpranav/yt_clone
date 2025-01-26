@@ -9,19 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <body style="margin: 0;">
-    <div class="header">
+  <body style="margin: 0; padding-top: 60px;">
+    <div class="header-flexbox">
 
       <div class="lhs-header">
-        <p>left</p>
+        <img class="ham-menu" src="icons/hamburger-menu.svg">
+        <img class="yt-logo" src="icons/youtube-logo.svg">
       </div>
       
       <div class="mid-header">
         <input class="s-bar" type="text" placeholder="Search">
+        <button class="s-btn">
+           <img style="height: 30px; flex: 1" src="icons/search.svg" alt=""> 
+        </button>
+        <button class="v-s-btn">
+          <img style="height: 25px;" src="icons/voice-search-icon.svg" alt="">
+        </button>
       </div>
       
       <div class="rhs-header">
-        <p>RIGHT</p>
+        <img style="height: 30px;" src="icons/upload.svg">
+        <img style="height: 30px;"src="icons/youtube-apps.svg">
+        <img style="height: 30px;"src="icons/notifications.svg">
+        <img style="height: 30px; border-radius: 100%; object-fit: contain;"src="channels/my-channel.jpg" alt="">
       </div>
 
     </div>
