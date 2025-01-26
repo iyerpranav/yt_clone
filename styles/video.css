@@ -9,6 +9,18 @@
   row-gap: 40px;
 }
 
+@media (max-width: 800px) {
+  .vid-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .vid-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .vid-details-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -59,7 +71,7 @@
   background-color: black;
   color: white;
   position: absolute;
-  padding: 4px;
+  padding: 4px 8px;
   bottom: 8px;
   right: 5px;
 

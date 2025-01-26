@@ -56,7 +56,6 @@
   background-color: rgb(241, 241, 241);
   margin-left: -1px;
   margin-right: 8px;
-  position: relative;
 }
 .v-s-btn {
   display: flex;
@@ -87,12 +86,33 @@
   font-size: 16px;
 }
 
-.s-btn .tooltip {
+.s-btn, .v-s-btn, .upload-icn-div,
+.yt-apps-icn-div, .notif-icn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.s-btn .tooltip, .v-s-btn .tooltip, .upload-icn-div .tooltip,
+.yt-apps-icn-div .tooltip, .notif-icn-div .tooltip {
   position: absolute;
   background-color: gray;
   color: white;
   padding: 4px;
   border-radius: 2px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 12px;
   bottom: -30px;
+  opacity: 0;
+  transition: oppacity 0.25s;
+  pointer-events: none;
+  white-space: nowrap;
 }
+
+.s-btn:hover .tooltip, .v-s-btn:hover .tooltip, .upload-icn-div:hover .tooltip,
+.yt-apps-icn-div:hover .tooltip, .notif-icn-div:hover .tooltip {
+  opacity: 1;
+}
+
