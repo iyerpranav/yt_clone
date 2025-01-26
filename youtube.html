@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <body style="margin: 0; padding-top: 60px; padding-left: 70px; padding-bottom: 3000px;">
+  <body style="margin: 0; padding-top: 91px; padding-left: 121px; padding-right: 24px; background-color: rgb(253, 253, 253);" >
     <div class="header-flexbox">
 
       <div class="lhs-header">
@@ -22,6 +22,7 @@
         <input class="s-bar" type="text" placeholder="Search">
         <button class="s-btn">
            <img style="height: 30px; flex: 1" src="icons/search.svg" alt=""> 
+           <div class="tooltip">Search</div>
         </button>
         <button class="v-s-btn">
           <img style="height: 25px;" src="icons/voice-search-icon.svg" alt="">
@@ -31,19 +32,46 @@
       <div class="rhs-header">
         <img style="height: 30px;" src="icons/upload.svg">
         <img style="height: 30px;"src="icons/youtube-apps.svg">
-        <img style="height: 30px;"src="icons/notifications.svg">
+        <div style="position: relative;">
+          <img style="height: 30px;"src="icons/notifications.svg">
+          <div style="position: absolute; top: -2px; right: -3px; 
+                      background-color: rgb(190, 0, 0); color: white;
+                      font-family: Roboto; font-size: 4px; padding: 1px; padding-left: 5px; padding-right: 5px;
+                      border-radius: 100%;">
+            3
+          </div>
+        </div>
         <img style="height: 30px; border-radius: 100%; object-fit: contain;"src="channels/my-channel.jpg" alt="">
       </div>
 
     </div>
     
     <div class="sidebar-flexbox">
-      <img style="width: 7px;" src="icons/home.svg">
-      <img style="width: 7px;" src="icons/explore.svg">
-      <img style="width: 7px;" src="icons/subscriptions.svg">
-      <img style="width: 7px;" src="icons/originals.svg">
-      <img style="width: 7px;" src="icons/youtube-music.svg">
-      <img style="width: 7px;" src="icons/library.svg">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+      
     </div>
 
     <div class="vid-grid">
