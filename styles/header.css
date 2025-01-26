@@ -8,6 +8,8 @@
   left: 0px;
   right: 0px;
   height: 60px;
+
+  z-index: 1000px;
   
   background-color: white;
   border-bottom-width: 1px;
