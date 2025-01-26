@@ -92,6 +92,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 
 .s-btn .tooltip, .v-s-btn .tooltip, .upload-icn-div .tooltip,
